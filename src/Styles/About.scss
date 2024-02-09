@@ -1,0 +1,32 @@
+#About {
+    background-color: #2C2832;
+    color: #ffffff;
+
+    .content {
+        .column {
+            flex-basis: 30%;
+    
+            
+        }
+    }
+    
+
+    a {
+        color: #FF5621;
+        transition: color 0.2s linear;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    .rate-value {
+        font-size: 100px;
+        margin: 0;
+        line-height: 0.5;
+
+        & + h3 {
+            border-top: 1px solid #fff;
+        }
+    }
+}

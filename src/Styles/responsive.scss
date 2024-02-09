@@ -1,0 +1,59 @@
+.App {
+    @media (max-width: 767px) {
+
+        h1 {
+           font-size: 34px;
+        }
+        
+        .container {
+            width: 100% !important;
+            flex-direction: column;
+            .column {
+                flex-basis: 100%;
+                margin-bottom: 1em;
+
+                &.column-right {
+                    margin-left: 0 !important;
+                }
+            }
+        }
+        
+
+        .partners-container {
+            justify-content: flex-start !important;
+
+            .partner-item {
+                flex-basis: 50% !important;
+                margin: 0.5em 0 !important;
+
+                img {
+                    object-fit: contain !important;
+                }
+            }
+        }
+
+        #Footer {
+            .container {
+                .column {
+                    ul {
+                        flex-direction: column;
+    
+                        li {
+                            margin-bottom: 0.5em;
+                        }
+                    }
+    
+                    &:last-child {
+                        ul {
+                            flex-direction: row;
+                            justify-content: flex-start;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+

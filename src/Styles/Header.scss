@@ -1,0 +1,125 @@
+#Header {
+    .logo {
+        width: 100%;
+        max-width: 188px;
+    }
+
+    .tel {
+        position: relative;
+
+        img {
+            position: absolute;
+            top: -7px;
+            right: -19px;
+        }
+    }
+
+    .main-menu {
+        list-style: none;
+        margin:0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+
+        li {
+            margin: 1.5em;
+
+            a {
+                text-decoration: none;
+                color: #000;
+                transition: color 0.2s linear;
+                position: relative;
+
+                &:hover {
+                    color: #FF5621;
+                    text-decoration: underline;
+                }
+
+                &.posticon {
+                    padding-right: 0.5em;
+                }
+
+                &.dropdown {
+                    .dropdown {
+                        position: absolute;
+                        top: 1px;
+                        right: -8px;
+                    }   
+                }
+
+                &.cta {
+                    background-color: #FF5621;
+                    transition: all 0.2s linear;
+                    padding: 0.5em;
+                    padding-right: 2.5em;
+                    color: #fff;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: #2d2d2d;
+                        color: #fff;
+                    }
+
+                    .dropdown {
+                        position: absolute;
+                        top: 8px;
+                        right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero {
+        background-color: #fafafa;
+
+        .partners-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            
+            .partner-item {
+                flex-basis: 30%;
+                display: flex;
+
+                img {
+                    width: 100%;
+                    height:auto;
+                    object-fit: none;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        .main-menu {
+            transition: all 0.2s linear;
+            flex-direction: column !important;
+
+            li {
+                a {
+                    .dropdown {
+                        display: none !important;
+                    }
+
+                    &.cta {
+                        padding: 0.5em !important;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1254px) {
+        .main-menu {
+
+            .cta {
+                padding: 0.5em !important;
+            }
+            img {
+                display: none;
+            }
+        }
+    }
+}
